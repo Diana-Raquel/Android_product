@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/placeholder">
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.cruz.producttask.ListFragment"
+        android:label="fragment_list2"
+        tools:layout="@layout/fragment_list2" />
+    <fragment
+        android:id="@+id/productFragment"
+        android:name="com.cruz.producttask.ProductFragment"
+        android:label="fragment_product2"
+        tools:layout="@layout/fragment_product2" >
+        <action
+            android:id="@+id/action_productFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+        <action
+            android:id="@+id/action_productFragment_to_createFragment"
+            app:destination="@id/createFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createFragment"
+        android:name="com.cruz.producttask.CreateFragment"
+        android:label="fragment_create2"
+        tools:layout="@layout/fragment_create2" />
+</navigation>
