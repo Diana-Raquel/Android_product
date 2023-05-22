@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/productFragment"
-        android:name="com.cruz.producttask.ProductFragment"
+        android:name="com.cruz.producttask.ui.products.ProductFragment"
         android:label="fragment_product"
         tools:layout="@layout/fragment_product" >
         <action
@@ -19,12 +19,12 @@
     </fragment>
     <fragment
         android:id="@+id/listFragment"
-        android:name="com.cruz.producttask.ListFragment"
+        android:name="com.cruz.producttask.ui.products.ListFragment"
         android:label="fragment_list"
         tools:layout="@layout/fragment_list" />
     <fragment
         android:id="@+id/createFragment"
-        android:name="com.cruz.producttask.CreateFragment"
+        android:name="com.cruz.producttask.ui.products.CreateFragment"
         android:label="fragment_create"
         tools:layout="@layout/fragment_create" />
 </navigation>
